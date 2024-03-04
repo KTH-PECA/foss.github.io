@@ -35,7 +35,9 @@ Depending on the type of contribution and the scope thereof (see Section 1.2 abo
 
 ### Third party rights
 
-A fundamental starting point when considering a contribution is that the contributing company has appropriately secured the right to do so in the first place. Any source code and corresponding documentation should be assumed to be protected by copyright unless the contribution is rudimentary to the point where it can safely be assumed to lack originality.  In unclear cases, it is generally advisable to involve legal counsel before ruling out copyright as a relevant factor.
+A fundamental starting point when considering a contribution is that the contributing company has appropriately secured the right to do so in the first place. Any source code and corresponding documentation should be assumed to be protected by copyright unless the contribution is rudimentary to the point where it can safely be assumed to lack originality[^copyright].  In unclear cases, it is generally advisable to involve legal counsel before ruling out copyright as a relevant factor.
+
+[^copyright]: Copyright is automatically granted to the author of a literary or artistic work (in this case, source code and documentation) upon the creation of such work. In a business context, the copyright will typically pass from the author (i.e. the developer) to the employer pursuant to law and/or the employment contract. In general, the copyright holder has an exclusive right to prevent others from making copies of the work (source code or documentation) and to make it available to the public. Reversely, this means that the source code or documentation may only be copied and distributed to others with the permission of the copyright holder. Such permission is generally referred to as a license.
 
 Before making a contribution of copyright-protected material, consider the following:
 
@@ -45,7 +47,9 @@ Before making a contribution of copyright-protected material, consider the follo
 
 * If the material has been developed independently or if it may include portions of material made by others, for instance by copying and pasting code snippets or text passages from other sources. In the latter case, it will be necessary to assess from a copyright perspective whether this use of third party sources prevents the contribution in question.
 
-* If the material has been developed with the support of generative AI, it may require additional considerations depending on the AI tool in question. This includes, for instance, whether the terms and conditions of the AI tool allows for such use of its output, and to which extent the output is truly generative rather than derivative from the dataset that the AI tool has been trained on. Please note that it is unlikely that material created exclusively by an AI is possible to protect by means of intellectual property rights, such as copyright.
+* If the material has been developed with the support of generative AI, it may require additional considerations depending on the AI tool in question. This includes, for instance, whether the terms and conditions of the AI tool allows for such use of its output, and to which extent the output is truly generative rather than derivative from the dataset that the AI tool has been trained on. Please note that it is unlikely that material created exclusively by an AI is possible to protect by means of intellectual property rights, such as copyright[^ai-copyright].
+
+[^ai-copyright]: [Computer Love: Beijing Court Finds AI-Generated Image is Copyrightable in Split with United States](https://www.natlawreview.com/article/computer-love-beijing-court-finds-ai-generated-image-copyrightable-split-united){:target="_blank"}, The National Law Review
 
 Apart from copyright, a contribution may also be subject to other third party rights. For instance:
 
@@ -61,15 +65,21 @@ From the legal perspective, the company will normally not assign or transfer its
 
 Open source software projects will from time to time use various legal instruments to ensure the company’s and/or developer’s commitment to the contribution.
 
-* To begin with, the open source software project will have a license regime for outbound licensing where one or more licenses are predominantly used or required for the downstream distribution. Such license regime may be defined in the project charter (if such charter exists) or elsewhere. At the very least, there is typically one or more LICENSE files in the repository. Although most open source software licenses focus on the outbound, downstream licensing rather than how to receive contributions, some open source software licenses also include specific terms and conditions for making contributions, such as the Apache License, Version 2.0.
+* To begin with, the open source software project will have a license regime for outbound licensing where one or more licenses are predominantly used or required for the downstream distribution. Such license regime may be defined in the project charter (if such charter exists) or elsewhere. At the very least, there is typically one or more LICENSE files in the repository. Although most open source software licenses focus on the outbound, downstream licensing rather than how to receive contributions, some open source software licenses also include specific terms and conditions for making contributions, such as the Apache License, Version 2.0[^asl2.0].
+
+[^asl2.0]: [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0){:target="_blank"}
 
 * A frequently used open source software project philosophy is inbound = outbound, meaning that the project has declared (e.g. in the project charter or a CONTRIBUTIONS file) that it only accepts contributions under the same license as the outbound license. As such, making a contribution to the project will be assumed to be licensed in to the project on the same terms as it is licensed out from the project.
 
 * In order to legally solidify and secure the commitment of contributors, some open source software projects also use so-called Developer Certificates of Origin (DCO), Contributor License Agreements (CLA), or similar.
 
-* A DCO is a unilateral sign-off by the contributor certifying that it has the adequate rights to make the contribution and that it understands the public nature of the contribution (including the sign-off).  Different open source software projects may use different mechanisms for recording the DCO, but the typical approach is that the sign-off is embedded in the git commits.
+* A DCO is a unilateral sign-off by the contributor certifying that it has the adequate rights to make the contribution and that it understands the public nature of the contribution (including the sign-off)[^dco].  Different open source software projects may use different mechanisms for recording the DCO, but the typical approach is that the sign-off is embedded in the git commits.
 
-* A CLA is an agreement between the contributor – an individual or a legal entity – and the open source software project owner.  In general, the purpose of a CLA is to improve the project’s ability to rely on contributions from a contributor. Please note that a CLA may in various ways extend beyond the contribution at hand, e.g. to cover any future contributions by employees of a company or group of companies. As such, it is strongly recommended to review and understand the terms and conditions of any CLA before signing it and proceeding with contributions.
+[^dco]: [Developer Certificate of Origin](https://developercertificate.org/){:target="_blank"}
+
+* A CLA is an agreement between the contributor – an individual or a legal entity – and the open source software project owner[^ccla].  In general, the purpose of a CLA is to improve the project’s ability to rely on contributions from a contributor. Please note that a CLA may in various ways extend beyond the contribution at hand, e.g. to cover any future contributions by employees of a company or group of companies. As such, it is strongly recommended to review and understand the terms and conditions of any CLA before signing it and proceeding with contributions.
+
+[^ccla]: [Corporate Contributor License Agreement](https://www.apache.org/licenses/cla-corporate.pdf){:target="_blank"}
 
 * As mentioned above, most open source software projects will retrieve contributions on a license basis, and not by transfer of ownership. However, a project can of course in theory acquire the intellectual property rights (IPR) instead of licensing it. To do so, an IPR assignment agreement would have to be executed between the contributor and project owner. Please note that an assignment of the IPR in a contribution would entail a complete transfer of rights and should as such be carefully deliberated before it is accepted.
 
@@ -93,6 +103,12 @@ Apart from what is stated above, participation in an open source software projec
 
 * In any context where representatives from actual or potential competitors are participating, it is advisable to avoid any sharing of commercially sensitive information and to have customary mechanisms to remind and record diligence with applicable competition/antitrust law regimes.
 
-* Larger open source software projects and/or Open Source Foundations may have their own antitrust guidelines.  Many companies will also have their own policies in respect of competition law compliance. Contributors should ensure awareness of such guidelines and policies and assess whether they require any particular actions or precautions for the intended engagement.
+* Larger open source software projects and/or Open Source Foundations may have their own antitrust guidelines[^lf-antitrust].  Many companies will also have their own policies in respect of competition law compliance. Contributors should ensure awareness of such guidelines and policies and assess whether they require any particular actions or precautions for the intended engagement.
 
-* Moreover, the technology in itself – or its distribution – may be regulated, for instance under export control regulation (although published open source software is often exempted) or specific product or technology legislation. Involve relevant experts as necessary in cases of uncertainty whether specific code or documentation can be shared in an open source software context and/or if it requires specific measures, such as BIS and NSA notifications for non-standard cryptography software.  Certain technology fields may also in various jurisdictions be subject to special regulation.
+[^lf-antitrust]: [Anti Trust Policy](https://www.linuxfoundation.org/legal/antitrust-policy){:target="_blank"}, Linux Foundation
+
+* Moreover, the technology in itself – or its distribution – may be regulated, for instance under export control regulation (although published open source software is often exempted) or specific product or technology legislation. Involve relevant experts as necessary in cases of uncertainty whether specific code or documentation can be shared in an open source software context and/or if it requires specific measures, such as BIS and NSA notifications for non-standard cryptography software[^lf-export-controls]. Certain technology fields may also in various jurisdictions be subject to special regulation[^eu-ai-act].
+
+[^lf-export-controls]: [Understanding US export controls with open source projects](https://www.linuxfoundation.org/resources/publications/understanding-us-export-controls-with-open-source-projects){:target="_blank"}
+
+[^eu-ai-act]: Such as the planned EU AI Act, which is expected to exclude regulation of open source software for the most part but apply to open source software for the prohibited types of AI, and the planned Cyber Resilience Act, which may come to include requirements on upstream company contributors in terms of cybersecurity considerations.

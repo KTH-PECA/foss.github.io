@@ -10,7 +10,11 @@ permalink: /Contributions-1-4-Ind
 
 Similarly diverse is the governance structure of projects, ranging from a single developer-lead model, sometimes also referred to as “Benevolent Dictator for Life” (e.g., the Linux kernel), via company-controlled projects (e.g., Android), to fully meritocracy-based governance models (e.g., OpenStack, Kubernetes). Meritocracy refers to a governance model in which the most valued contributors to a project obtain leadership positions in the project, often based on project-wide elections. Projects controlled by a single company typically lack community-based governance fora such as Technical Steering Committees, and more prominently, all Committers (see description of developer roles in Section 1.3.3) among the developers are employed by the controlling company, thereby gatekeeping all code going into the codebase.
 
-Additionally, the size of the development community is an indicator of the adoption of a project, but not at all a clear cut criterion. Some widely used open source projects are maintained by just a small group of developers, despite being leveraged across countless commercial and non-commercial software. Famous examples are log4j or openssl.
+Additionally, the size of the development community is an indicator of the adoption of a project, but not at all a clear cut criterion. Some widely used open source projects are maintained by just a small group of developers, despite being leveraged across countless commercial and non-commercial software. Famous examples are log4j[^log4j] or openssl[^openssl].
+
+[^log4j]: [Log4j project team](https://logging.apache.org/log4j/2.x/team.html){:target="_blank"}
+
+[^openssl]: [OpenSSL](https://www.openssl.org/about.html){:target="_blank"}
 
 Given all this diversity, organizations and developers who intend to i) utilize and consequently ii) engage in open source must be aware of the nature of the development community and take their respective ways-of-working into account.
 

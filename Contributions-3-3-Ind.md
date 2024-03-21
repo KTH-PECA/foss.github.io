@@ -6,7 +6,7 @@ has_children: true
 permalink: /Contributions-3-3-Ind
 ---
 
-## The business process of making an open source software contribution part 3 
+## The business process of making an open source software contribution part 3
 
 ## Creating a new open source software project
 
@@ -18,7 +18,7 @@ Deciding to create a new open source software project shares many of the same co
 
 * Conscious decision. A conscious decision based on the above, including the allocation of adequate and suitable resources.
 
-A significant difference, however, is that the creator of a new open source software project needs to take several additional decisions to establish the project in the first place, and that the project essentially needs to be viewed as any other software development project. In other words, it needs to be planned, staffed, funded, launched, governed, and maintained over the project lifecycle[^todo-starting-a-oproject]. Further, the success of the project will depend on successful external community building.
+A significant difference, however, is that the creator of a new open source software project needs to take several additional decisions to establish the project in the first place, and that the project essentially needs to be viewed as any other software development project. In other words, it needs to be planned, staffed, funded, launched, governed, and maintained over the project lifecycle[^todo-starting-a-project]. Further, the success of the project will depend on successful external community building.
 
 [^todo-starting-a-project]: [Starting Open Source Projects](https://todogroup.org/resources/guides/a-guide-to-outbound-open-source-software/#starting-open-source-projects){:target="_blank"}
 

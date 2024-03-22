@@ -3,7 +3,7 @@ layout: default
 title: Engaging in a FOSS project as a company employee
 nav_order: 2
 has_children: true
-permalink: /Contribution-4-Ind
+permalink: /Contributions-4-Ind
 ---
 
 ## Engaging in an open source software project as a company employee

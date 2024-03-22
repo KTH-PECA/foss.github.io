@@ -50,5 +50,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_MARKDOWN: true
           MARKDOWN_CONFIG_FILE: markdownlint.yml
-          FILTER_REGEX_INCLUDE: .*Contribution-.*.md
+          FILTER_REGEX_INCLUDE: .*Contributions-.*.md
 

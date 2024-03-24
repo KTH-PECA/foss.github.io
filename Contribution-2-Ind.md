@@ -10,7 +10,7 @@ permalink: /Contributions-2-Ind
 
 When a company actively participates in open source software development by contributing code, resources, or expertise to open source software projects, it can derive several strategic advantages. Contribution is not just an act of goodwill but should be treated as a strategic move that aligns with the company’s broader goals and objectives.
 
-![Business_Reasons](./Contrib_ch2_Business_reasons.jpg)
+<img src="img/./Contrib_ch2_Business_reasons.jpg" alt="" width="500" height="auto">
 
 ### Strategic advantages of open source software contribution
 

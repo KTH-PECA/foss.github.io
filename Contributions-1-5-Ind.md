@@ -10,7 +10,7 @@ permalink: /Contributions-1-5-Ind
 
 Despite the aforementioned diversity among open source projects, developers within a project typically hold one or more specific roles.
 
- ![image](https://github.com/ExpertLearningLab/foss-learning/assets/126161450/48f6b5b9-3713-4549-b087-bf87dc74f13d)
+<img src="img/contributions-module1-developer-roles.png" alt="Hierarchy of roles in an open source project" width="500" height="auto">
 
 _Hierarchy of roles in an open source project._
 

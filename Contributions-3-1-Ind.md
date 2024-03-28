@@ -6,9 +6,7 @@ has_children: true
 permalink: /Contributions-3-1-Ind
 ---
 
-## The business process of making an open source software contribution part 1
-
-### Contributions to existing open source software projects
+## Contributions to existing open source software projects
 
 The business process of engaging in existing open source software projects can be set up in various ways and be subject to different governance models, depending on a company’s needs and capabilities.
 Regardless of if the decision is made through an ad hoc process or if it passes through a sophisticated setup (e.g. with an Open Source Program Office (OSPO)), the process should in the end lead to the following three cornerstones:
@@ -21,7 +19,7 @@ Regardless of if the decision is made through an ad hoc process or if it passes 
 
 Please note: This module does not refer to spare-time contributions made by employees outside of work. In that context, it is important to note that in most cases (either by law or contract), the copyright to a developer’s code – insofar as it falls within his or her job description – will be automatically transferred to the employer. It is generally advisable for companies to have a process to get notified about and approve employee spare-time activities that may border to or affect the day-to-day work, subject to local employment legislation. Open source software contributions are not an exception in that regard.
 
-### Defining the purpose of the open source software contribution
+## Defining the purpose of the open source software contribution
 
 As described in module 2, there are many possible reasons for a company to engage in open source software development through contributions. When considering a specific contribution case, the task is essentially to identify which of these reasons apply to the case in question. In short: why make this contribution?
 If there is no obvious answer to that question, it is likely due to one out of two reasons:

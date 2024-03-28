@@ -6,9 +6,7 @@ has_children: true
 permalink: /Contributions-3-2-Ind
 ---
 
-## The business process of making an open source software contribution part 2
-
-### Suitability assessment
+## Suitability assessment
 
 With the intended purpose established, the next step is to assess the suitability of the contribution.
 

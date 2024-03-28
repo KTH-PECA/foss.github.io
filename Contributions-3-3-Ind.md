@@ -6,8 +6,6 @@ has_children: true
 permalink: /Contributions-3-3-Ind
 ---
 
-## The business process of making an open source software contribution part 3
-
 ## Creating a new open source software project
 
 Deciding to create a new open source software project shares many of the same considerations with the choice of making major or continuous contributions to existing open source software projects. For instance, the three cornerstones are equally applicable:
@@ -64,7 +62,7 @@ When starting an open source software project, various legal and IPR aspects wil
 * Ensure compliance with relevant laws and regulations.
 * Choose relevant legal instruments (e.g. the open source software license) and policies for the project.
 
-#### Third party rights
+### Third party rights
 
 The legal and IPR suitability assessment set out in module 3.1 is generally applicable to assets that the company itself puts into the open source software project, from the start as well as thereafter. In the following, additional considerations relating to the creation of open source software projects have been added.
 

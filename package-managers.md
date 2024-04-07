@@ -10,13 +10,13 @@ description: "This chapter describes the use of package managers in software dev
 
 [Package managers](https://en.wikipedia.org/wiki/Package_manager) are software tools that allow handling software dependencies in a consistent manner. Most package managers are used to automate the process of installing, upgrading, configuring, and removing third-party [software dependencies](https://en.wikipedia.org/wiki/Third-party_software_component). They also provide a consistent interface for installing software across different [operating systems](https://en.wikipedia.org/wiki/Operating_system) and distributions. Package managers can be divided, according to their scope, into three categories: system-level, deployment-level, and development-level. This chapter describes the role of package managers in software development and discusses their impact on [software ecosystems](https://en.wikipedia.org/wiki/Software_ecosystem).
 
-### _Outline_ 📋
+## _Outline_ 📋
 
 In this chapter, we learn about:
- 
-- The principal characteristics of [system-level package managers](#system-level-package-managers), [deployment-level package managers](#deployment-level-package-managers), and [development-level package managers](#development-level-package-managers) 
-- The impact of [software ecosystems](#software-ecosystems) in modern software development
-- [Use cases](#industry-use-cases) for open-source software in the industry
+
+* The principal characteristics of [system-level package managers](#system-level-package-managers), [deployment-level package managers](#deployment-level-package-managers), and [development-level package managers](#development-level-package-managers)
+* The impact of [software ecosystems](#software-ecosystems) in modern software development
+* [Use cases](#industry-use-cases) for open-source software in the industry
 
 We also encourage you to explore the links throughout the text, the [Do-It-Yourself](#diy) tasks, as well as the resources listed in the [references](#references).
 
@@ -27,16 +27,16 @@ System-level package managers are used to install software on the operating syst
 APT facilitates the installation a plethora of useful software packages. For example, the [Vim editor](https://en.wikipedia.org/wiki/Vim_(text_editor)) can be installed by running the following command on the [terminal](https://en.wikipedia.org/wiki/Terminal_emulator):
 
 ```bash
-$ sudo apt install vim
+sudo apt install vim
 ```
 
-To understand how the APT package manager [works](https://devconnected.com/apt-package-manager-on-linux-explained/), it is useful to understand the Linux packaging system. The following figure illustrates a typical Linux system configured to fetch software from three different repositories: 
+To understand how the APT package manager [works](https://devconnected.com/apt-package-manager-on-linux-explained/), it is useful to understand the Linux packaging system. The following figure illustrates a typical Linux system configured to fetch software from three different repositories:
 
-![](./img/linux-packaging-system.svg)
+![Linux Packaging System](./img/linux-packaging-system.svg)
 
 The _default_ official repository in the figure denotes the remote registry that contains third-party packages that are available for installation, such as the Debian packages [repository](https://packages.debian.org/stable/editors/vim) for the Vim editor. The APT _cache_ provides offline information about the packages currently installed on the local system. It guarantees that the user is able to access package information without having to connect to the Internet.
 
-![](./img/vim-packages.png){:height="50%" width="50%"}
+![Vim Packages](./img/vim-packages.png){:height="50%" width="50%"}
 
 As can be seen from the figure, system-level package managers also include metadata for each package. This metadata includes the functionalities provided by the package, information about its developers, and perhaps most importantly, the list of other packages it depends on, i.e., its **dependencies**. For example, the Vim editor depends on the [libacl1](https://packages.debian.org/bullseye/libacl1) package.
 
@@ -56,18 +56,18 @@ Deployment-level package managers are used to handle [container images](https://
 
 ```bash
 # Create a Dockerfile
-$ echo "FROM ubuntu:latest" > Dockerfile
+echo "FROM ubuntu:latest" > Dockerfile
 
 # Build a Docker image
-$ docker build -t my_image .
+docker build -t my_image .
 
 # Upload the image to Docker Hub
-$ docker push my_image
+docker push my_image
 ```  
 
 The following figure illustrates how the Docker packaging system operates on a network.
 
-![](./img/docker-networking.svg)
+![Docker Networking](./img/docker-networking.svg)
 
 Organizations maintain [public and official](https://hub.docker.com/search?q=) Docker images in their Docker Hub repository. A Docker image that is available on Docker Hub can be reused within other applications, and spin up new containers. Individual containers can communicate with each other over a [network](https://www.edureka.co/blog/docker-networking/) to perform the required actions as applications execute.
 
@@ -88,12 +88,13 @@ Development-level package managers run on top of the operative system and contai
 
 The following figure illustrates the typical use of a package managers to build a software project:
 
-![](./img/dev-level-package-managers.svg)
+![Development-level package managers](./img/dev-level-package-managers.svg)
 
 There are two key elements in the above figure:
+
 1. The software project: a project that uses the package manager to manage its dependencies
-2. The local repository: a cache of the package manager maintained locally on the system
-3. The remote repository: a remote address on the Internet where packages and dependencies are hosted
+1. The local repository: a cache of the package manager maintained locally on the system
+1. The remote repository: a remote address on the Internet where packages and dependencies are hosted
 
 For example, this chapter is written in [Markdown](https://en.wikipedia.org/wiki/Markdown) and uses the [Rubygems](https://rubygems.org/) package manager to handle the dependencies required to build this website. In particular, [Kramdown](https://rubygems.org/gems/kramdown) is the Ruby dependency in charge of converting Markdown into the [HTML](https://en.wikipedia.org/wiki/HTML) that our web browsers understand. Here is an excerpt of the [Gemfile](./Gemfile) that is used every time this website is built:
 
@@ -126,8 +127,9 @@ Below is a list with a few of the official package managers for some of the most
 [Software repositories](https://en.wikipedia.org/wiki/Software_repository) are storage locations for software packages. Package managers interact with software repositories in order to build software projects by querying the repositories with the goal of retrieving packages from them.
 
 There are two types of software repositories:
+
 1. Local repositories: repositories that are located on the local filesystem
-2. Remote repositories: repositories that are located on a remote server
+1. Remote repositories: repositories that are located on a remote server
 
 Public repositories are used in order to aggregate free software provided by the community. For example, on Linux, software is distributed through public repositories that are tied to a specific distribution (e.g., Ubuntu, Debian, CentOS, or RHEL have their own repositories that are updated daily). Additionally. trusted repositories can also be configured on the local system, so that packages can be installed from them.
 
@@ -135,7 +137,7 @@ Public repositories are used in order to aggregate free software provided by the
 
 Software ecosystems are large collections of interdependent software components, including package managers, that are maintained by large and geographically distributed communities of collaborating contributors [^2]. Typical examples of open-source software ecosystems are distributions for Linux operating systems, and packaging ecosystems for specific programming languages. Each package manager has its own policies related to package updates or package dependencies. While packaging ecosystems are extremely useful for their respective communities of developers, they face challenges related to their scale, complexity, and rate of evolution. Typical problems are backward incompatible package updates, and the risk of (transitively) depending on packages that have become obsolete or inactive. Assessing the quality of package dependency networks, and supporting it through proper dependency management tools, better policies, and ecosystem health analysis dashboards is of utmost importance.
 
-For this purpose, the __Software Bill of Materials__, or [SBOM](https://www.cisa.gov/sbom), has emerged as a key building block in software security and software supply chain risk management.  An SBOM is a nested inventory, a list of ingredients that make up software components. In a nutshell, an SBOM is formal and machine-readable metadata that uniquely identifies a software package and its contents. It may include other information about its contents, including copyrights and license data.
+For this purpose, the _Software Bill of Materials_, or [SBOM](https://www.cisa.gov/sbom), has emerged as a key building block in software security and software supply chain risk management.  An SBOM is a nested inventory, a list of ingredients that make up software components. In a nutshell, an SBOM is formal and machine-readable metadata that uniquely identifies a software package and its contents. It may include other information about its contents, including copyrights and license data.
 SBOMs are designed to be shared across organizations and are particularly helpful at providing transparency of components delivered by participants in a software supply chain. Many organizations concerned about software security are making SBOMs a cornerstone of their cyber-security strategy [^3].
 
 ## Industry Use Cases
@@ -144,28 +146,30 @@ Package managers are designed to eliminate the need for manual installations, up
 
 On the other hand, and as part of the development lifecycle, source code is continuously being built into binary artifacts using [continuous integration](https://en.wikipedia.org/wiki/Continuous_integration) (CI). This means that the production pipeline uses package managers every time a developer pushes new code to the project, getting artifacts from local or external repositories to build the project. Tight integration with remote repositories enables the storage of important metadata such as:
 
-- The developer who triggered the build (whether manually or by committing to version control)
-- The modules that were built
-- The sources that were used (commit id, revision, branch)
-- The dependencies that were used
-- Environment variables
-- Packages installed
+* The developer who triggered the build (whether manually or by committing to version control)
+* The modules that were built
+* The sources that were used (commit id, revision, branch)
+* The dependencies that were used
+* Environment variables
+* Packages installed
 
 Package managers are an important component in the software supply chain of industrial applications. There is an increasing interest from companies in learning about the “health” of open-source components. This implies understanding the components required to build the software artifacts (i.e., their direct and transitive dependencies). Today, companies are aware that the health of a single component depends on the health of the ecosystem in which it is produced and used. From the point of view of the developers producing software products, it is essential to keep track of all components that constitute their software system. This is also true from the point of view of users. For example, to understand the security problems of a product, users need to understand the security problems of all its dependencies, and in many cases, of their transitives developed by the open-source community.
 
 ## DIY
 
 ### _Novice_ 👾
-- Find a `pom.xml`, a `requirements.txt`, or a `packages.json` file for an open-source project
-- Report the number of dependencies, including their versions, from the file found in the previous exercise
-- Find a `Dockerfile` within an open-source project
+
+* Find a `pom.xml`, a `requirements.txt`, or a `packages.json` file for an open-source project
+* Report the number of dependencies, including their versions, from the file found in the previous exercise
+* Find a `Dockerfile` within an open-source project
 
 ### _Expert_ 💯
-- Follow the instructions in the `README` of an open-source project to build it
-- Upload a software package to an external repository (e.g., Maven Central, pip, or npm)
-- Build a Docker image from the `Dockerfile` found within an open-source project
-- Upload the Docker image generated from the previous exercise to Docker Hub
-- Generate the SBOM for a popular open-source project
+
+* Follow the instructions in the `README` of an open-source project to build it
+* Upload a software package to an external repository (e.g., Maven Central, pip, or npm)
+* Build a Docker image from the `Dockerfile` found within an open-source project
+* Upload the Docker image generated from the previous exercise to Docker Hub
+* Generate the SBOM for a popular open-source project
 
 ## References
 

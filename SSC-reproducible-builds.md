@@ -23,19 +23,19 @@ et. al.[^1] Software development occurs upstream, and the source code is then di
 binaries from the source code and distribute them to end-users. It is important to note that neither the distribution process nor the build process can be
 completely trusted in this scenario, as they are subject to potential threats in the real world.
 
-![](/img/reproducible-builds.png)
+![reproducible builds](/img/reproducible-builds.png)
 
 In the figure: the reproducible builds approach to increasing trust in executables built by untrusted third parties.
 The end-user should reject the binary artifact from their software vendor, as its checksum (`0xBAAD`) does not
 match the one built by multiple, independent third-parties (`0x1337`).
 
-### _Outline_ 📋
+## _Outline_ 📋
 
 In this chapter, we learn about:
 
-- The [benefits of setting up reproducible builds](#benefits-of-reproducible-builds)
-- A real-world example of a [system that employs reproducible builds](#example--the-gnulinux-os)
-- Popular [tools](#tools) to help you achieve reproducible builds.
+* The [benefits of setting up reproducible builds](#benefits-of-reproducible-builds)
+* A real-world example of a [system that employs reproducible builds](#example-the-gnulinux-os)
+* Popular [tools](#tools) to help you achieve reproducible builds.
 
 We also encourage you to explore the links throughout the text, the [Do-It-Yourself](#diy) tasks, as well as the resources listed in
 the [references](#references).
@@ -109,20 +109,20 @@ software that is more trustworthy and can be more easily verified and reproduced
 There are several tools that can be used to create reproducible builds, depending on the specific needs and requirements of the software project.
 Some common tools that are used for this purpose include:
 
-- Version control systems: Version control systems, such as Git or Subversion, are used to manage the source code and build instructions for a software project.
+* Version control systems: Version control systems, such as Git or Subversion, are used to manage the source code and build instructions for a software project.
   These systems allow developers to track changes to the codebase, revert changes if necessary, and collaborate with other developers.
   By using a version control system, developers can ensure that the source code and build instructions are well-organized and easily accessible, which can help
   to make builds more reproducible.
 
-- Build automation tools: Build automation tools, such as Make or Maven, are used to automate the build process for software projects.
+* Build automation tools: Build automation tools, such as Make or Maven, are used to automate the build process for software projects.
   These tools allow developers to specify the steps required to build the software and then execute those steps automatically.
   By using a build automation tool, developers can more easily reproduce builds and ensure that the build process is consistent and reliable.
 
-- Package managers: Package managers, such as npm or pip, are used to manage external dependencies for a software project.
+* Package managers: Package managers, such as npm or pip, are used to manage external dependencies for a software project.
   These tools allow developers to easily install and update the libraries and other software dependencies that are needed to build the software.
   By using a package manager, developers can more easily manage external dependencies and ensure that builds are reproducible.
 
-- Continuous integration tools: Continuous integration tools, such as [Jenkins](https://www.jenkins.io/) or [CircleCI](https://circleci.com/), are used to
+* Continuous integration tools: Continuous integration tools, such as [Jenkins](https://www.jenkins.io/) or [CircleCI](https://circleci.com/), are used to
   automate the build and test process for software
   projects.
   These tools allow developers to automatically build and test the software whenever changes are made to the codebase.
@@ -212,17 +212,17 @@ For this scheme to work, the output of the final compilations need to be the sam
 
 ### _Novice_ 👾
 
-- Set up a simple Maven project with the [Reproducible Build Maven Plugin](https://zlika.github.io/reproducible-build-maven-plugin/) to ensure that the build is
+* Set up a simple Maven project with the [Reproducible Build Maven Plugin](https://zlika.github.io/reproducible-build-maven-plugin/) to ensure that the build is
   reproducible.
-- For the previous project, experiment with different build configurations and observe how they affect the reproducibility of the build. For example, try
+* For the previous project, experiment with different build configurations and observe how they affect the reproducibility of the build. For example, try
   building the project with
   different versions of Maven or with different sets of dependencies and see how this affects the reproducibility of the build.
 
 ### _Expert_ 💯
 
-- Research the concept of diverse double-compilation and write a short summary explaining how it can be used to improve the reproducibility and security of
+* Research the concept of diverse double-compilation and write a short summary explaining how it can be used to improve the reproducibility and security of
   software builds.
-- Create a script file (e.g., using Bash) that can be used to automate the build process, including all necessary steps to ensure reproducibility. This may
+* Create a script file (e.g., using Bash) that can be used to automate the build process, including all necessary steps to ensure reproducibility. This may
   involve downloading and installing specific tools and dependencies, setting up build environments, and running the build itself.
 
 # References

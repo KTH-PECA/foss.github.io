@@ -12,17 +12,19 @@ A vulnerability is an intentional or unintentional, exploitable weakness in the 
 
 The example below illustrates this cycle! Knowledge about some software and potential vulnerabilities already exists from previous iterations. The developer can use this knowledge to check his code infrastructure, or use tools that utilize this knowledge to automatically scan for potential weaknesses. In the end, the newly created knowledge is fed back to the public databases and the developing community.
 
-![](./img/vulnerabilities.png)
+![Vunerabilities](./img/vulnerabilities.png)
 
-### _Outline_ 📋
+## _Outline_ 📋
+
 In this chapter, we learn about
-- Checking the vulnerability [status](#status) of an open source component
-  - [Identifying](#correct-component-identification) the correct component's vulnerabilities
-  - Using [Static Analysis](#static-analysis)
-  - Using [Binary Analysis](#binary-analysis)
-- [Monitoring](#monitoring) for vulnerabilities
-- Quantifying the [impact](#impact) of vulnerabilities
-- [Managing](#management) vulnerabilities effectively
+
+* Checking the vulnerability [status](#status) of an open source component
+  * [Identifying](#correct-component-identification) the correct component's vulnerabilities
+  * Using [Static Analysis](#static-analysis)
+  * Using [Binary Analysis](#binary-analysis)
+* [Monitoring](#monitoring) for vulnerabilities
+* Quantifying the [impact](#impact) of vulnerabilities
+* [Managing](#management) vulnerabilities effectively
 
 We also encourage you to explore the links throughout the text, and the [Do-It-Yourself](#diy) tasks.
 
@@ -40,22 +42,22 @@ After the correct identification of the software packages, different forms of an
 
 The following image illustrates the stage of the programming proccess at which this type of analysis may be used
 
-![](./img/static-analysis.png) |
+![static analysis](./img/static-analysis.png) |
 *Image source: Chess, Brian, and Gary McGraw. "Static analysis for security." IEEE security & privacy 2.6 (2004): 76-79* |
 
-Static analysis does not aim to eliminate all the security problems; it aims to make the code 'good enough'. It achieves this by utilizing rules and patterns to detect unsafe operations (e.g., *gets(&buf)* ) without actually running the code in question. There are several ways to perform this analysis, from simple to more advanced and accurate ones:
+Static analysis does not aim to eliminate all the security problems; it aims to make the code 'good enough'. It achieves this by utilizing rules and patterns to detect unsafe operations (e.g., `gets(&buf)` ) without actually running the code in question. There are several ways to perform this analysis, from simple to more advanced and accurate ones:
 
-- A simple solution is the use of the Unix `grep` command in order to find lines of code that can be problematic
-- Basic lexical analysis tools (e.g., [Flawfinder](https://dwheeler.com/flawfinder/)) can tokenize source files and match them against already-known vulnerabilities
-- There are tools that take into account the semantics of the language, e.g., the relationships between the functions and the classes ([list of tools](https://www.nist.gov/itl/ssd/software-quality-group/source-code-security-analyzers)). Such tools usually require the developer to define safety properties, expected function behavior, and unsafe operations (e.g., global variable modification)
+* A simple solution is the use of the Unix `grep` command in order to find lines of code that can be problematic
+* Basic lexical analysis tools (e.g., [Flawfinder](https://dwheeler.com/flawfinder/)) can tokenize source files and match them against already-known vulnerabilities
+* There are tools that take into account the semantics of the language, e.g., the relationships between the functions and the classes ([list of tools](https://www.nist.gov/itl/ssd/software-quality-group/source-code-security-analyzers)). Such tools usually require the developer to define safety properties, expected function behavior, and unsafe operations (e.g., global variable modification)
 
 ### Binary Analysis
 
 Vulnerable or malicious code can be inserted in various stages of the supply chain, potentially circumventing some of the implemented security checks. Contrary to the previous methodology, binary analysis acts directly on the compiled program, the executable; which includes the whole suite of libraries and code needed for the software to run. It is possible, for example, for a compromised compiler to introduce malicious code into the executable without any modification to the source code.
 Binary analysis can tackle such problems. Tools like [angr](https://angr.io/) can produce control flow graphs from the executable, making it easier to detect bugs and unintended behavior. Others tools, such as [Black Duck](https://www.synopsys.com/software-integrity/security-testing/software-composition-analysis/binary-analysis.html), can detect outdated libraries, previously-known vulnerabilities, unwanted leakage of tokens and personal information (e.g., hardcoded email addresses). A security analysis of a binary is illustrated below:
 
-![](./img/risk-analysis.png) |
-*Image source: https://www.synopsys.com/software-integrity/engage/sca* |
+![risk analysis](./img/risk-analysis.png) |
+*Image source: <https://www.synopsys.com/software-integrity/engage/sca>* |
 
 Binary analysis can also tackle the problem of compromised compilers. For example, the resulting executable from a supply chain can be compared with an executable produced in a safe and "trusted" environment, to ensure **software integrity**. Differences between the two executables could be caused due to the insertion of malicious code, but also from other non-malicious sources (which is the subject of [Reproducible builds](SSC-reproducible-builds.md)).
 
@@ -70,30 +72,33 @@ The analysis of the possible impact of vulnerability exposures should be perform
 ## Management
 
 The Common Vulnerability Scoring System, or [CVSS](https://www.first.org/cvss/), is a method used to supply a qualitative measure of the severity of a vulnerability. CVSS is not a measure of risk. CVSS consists of three metric groups: Base, Temporal, and Environmental. The Base metrics produce a score ranging from 0 to 10, which can then be modified by scoring the Temporal and Environmental metrics. Depending on the vulnerability severity, CVSS scoring, support context, community status, and the impact on the software project, developers can consider remediation paths, such as:
-- Temporary own fix with or without feedback to the community
-- Wait for the next version by the community
-- Back-porting of project to an older version
-- Relying on the supplier for a patch or correction
+
+* Temporary own fix with or without feedback to the community
+* Wait for the next version by the community
+* Back-porting of project to an older version
+* Relying on the supplier for a patch or correction
+
 An important aspect of vulnerability management should also be to update the database of the organization to include the detected status, to avoid future selection and use of the component.
 
 ## DIY
 
 ### _Novice_ 👾
-- Vulnerability analysis needs to happen only once?
-- Static and binary analysis is enough to capture all vulnerabilities?
-- Who is responsible for checking the correctness of updates?
+
+* Vulnerability analysis needs to happen only once?
+* Static and binary analysis is enough to capture all vulnerabilities?
+* Who is responsible for checking the correctness of updates?
 
 ### _Expert_ 💯
-- Familiarize with the different analysis approaches; where should each one of them be used?
-- Perform a (simple) analysis of a software component in your code infrastructure and report your findings!
+
+* Familiarize with the different analysis approaches; where should each one of them be used?
+* Perform a (simple) analysis of a software component in your code infrastructure and report your findings!
 
 ## References
 
-
 1. [Static analysis for security. Brian Chess, Gary McGraw](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1366126)
-2. [Countering trusting trust through diverse double-compiling. David A. Wheeler, 2005.](https://ieeexplore.ieee.org/document/1565233)
-3. [Common Vulnerabilities and Exposures](https://cve.mitre.org/)
-4. [NIST Executive Order 14028](https://www.nist.gov/itl/executive-order-14028-improving-nations-cybersecurity/software-security-supply-chains)
-5. [NIST list of code analyzers](https://www.nist.gov/itl/ssd/software-quality-group/source-code-security-analyzers)
-6. [Common Platform Enumeration dictionary](https://nvd.nist.gov/products/cpe)
-7. [The Common Vulnerability Scanning System](https://www.first.org/cvss/)
+1. [Countering trusting trust through diverse double-compiling. David A. Wheeler, 2005.](https://ieeexplore.ieee.org/document/1565233)
+1. [Common Vulnerabilities and Exposures](https://cve.mitre.org/)
+1. [NIST Executive Order 14028](https://www.nist.gov/itl/executive-order-14028-improving-nations-cybersecurity/software-security-supply-chains)
+1. [NIST list of code analyzers](https://www.nist.gov/itl/ssd/software-quality-group/source-code-security-analyzers)
+1. [Common Platform Enumeration dictionary](https://nvd.nist.gov/products/cpe)
+1. [The Common Vulnerability Scanning System](https://www.first.org/cvss/)

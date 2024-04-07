@@ -31,13 +31,13 @@ For example, code reviews, secure development practices, and [reproducible build
 deploying mechanisms within the CI/CD pipeline.
 Users of OSS should also be vigilant and only download software from trusted sources.
 
-### _Outline_ 📋
+## _Outline_ 📋
 
 In this chapter, we learn about:
 
-- A real-world example of a [software supply chain attack](#example--the-solarwinds-supply-chain-attack)
-- A taxonomy of the principal [attack vectors in OSS supply chain attacks](#attack-vectors-in-oss-supply-chain-attacks)
-- Techniques, methodologies, and tools to [detect and prevent OSS supply chain attacks](#safeguarding-against-oss-supply-chain-attacks)
+* A real-world example of a [software supply chain attack](#example-the-solarwinds-supply-chain-attack)
+* A taxonomy of the principal [attack vectors in OSS supply chain attacks](#attack-vectors-in-oss-supply-chain-attacks)
+* Techniques, methodologies, and tools to [detect and prevent OSS supply chain attacks](#safeguarding-against-oss-supply-chain-attacks)
 
 We also encourage you to explore the links throughout the text, the [Do-It-Yourself](#diy) tasks, as well as the resources listed in
 the [references](#references).
@@ -106,7 +106,7 @@ For example, there were no security audit performed on the packages submitted to
 Significant research effort has been devoted in
 classifying [supply-chain compromises](https://github.com/IQTLabs/software-supply-chain-compromises/blob/master/software_supply_chain_attacks.csv) and
 developing tools for hardening the supply chain infrastructure is a trending and marketable business.
-We have seen the rise of tools to mitigating the risks (e.g., [Snik](https://snyk.io/, [Sonarqube](https://www.sonarqube.org/),
+We have seen the rise of tools to mitigating the risks (e.g., [Snyk](https://snyk.io/), [Sonarqube](https://www.sonarqube.org/),
 and [Chaos Monkey](https://netflix.github.io/chaosmonkey/))).
 Existing tools are mostly focused on monitoring applications' behavior, scanning dependencies, and assessing code quality.
 However, the adoption of such tools is still at an early stage in most organizations.
@@ -117,7 +117,7 @@ open-source project artifacts, which are consumed and executed by downstream use
 
 The following figure, from the original paper, shows a excerpt of the attack tree.
 
-![](/img/oss-supply-chain-attacks-taxonomy.png)
+![supply chain attack taxonomy](/img/oss-supply-chain-attacks-taxonomy.png)
 
 The previous figure reflects the feedback of 17 domain experts on the initial version, collected through an online survey.
 As observed, subtrees for user and system compromises exist multiple times, only their first occurrence is expanded. The grey, numbered rectangles
@@ -152,7 +152,7 @@ A typical example is of becoming a contributor of a popular OSS project.[^6]
 In this case, an attacker convinces or tricks a legitimate project maintainer (e.g., by using social engineering techniques) to provide him or her additional
 permissions. This way, the project maintainer could promote the attacker as a role of maintainer or even project owner. As a result, the attacker receives
 privileges for project-related resources, e.g., the source code repository, the build system or the database administration.
-Unfortunately, many open-source projects are anyways short on resources (cf. https://www.codeshelter.co/ or https://jazzband.co), and sometimes the original
+Unfortunately, many open-source projects are anyways short on resources (cf. <https://www.codeshelter.co/> or <https://jazzband.co>), and sometimes the original
 maintainers simply
 cannot or do not want to continue project maintenance anymore, both of which makes such
 projects prone for these social-engineering attacks.
@@ -376,16 +376,16 @@ dependencies established in the past.
 
 ### _Novice_ 👾
 
-- Get familiar with the [OWASP Top 10 Application Security Risks](https://owasp.org/www-project-top-ten/).
-- Explore the attack tree, attack vectors, and safeguards in
+* Get familiar with the [OWASP Top 10 Application Security Risks](https://owasp.org/www-project-top-ten/).
+* Explore the attack tree, attack vectors, and safeguards in
   the [Risk Explorer for Software Supply Chains](https://sap.github.io/risk-explorer-for-software-supply-chains/#/).
 
 ### _Expert_ 💯
 
-- Scan the consumed open-source components of a software project and assess the security requirements at each step of the supply chain.
-- Design the collaboration to an OSS such that they accept contributions only via pull/merge requests while enforcing a review process and a discussion before
+* Scan the consumed open-source components of a software project and assess the security requirements at each step of the supply chain.
+* Design the collaboration to an OSS such that they accept contributions only via pull/merge requests while enforcing a review process and a discussion before
   merging the code in production branches.
-- Execute a vulnerability assessment tool to find for vulnerabilities in a software project.
+* Execute a vulnerability assessment tool to find for vulnerabilities in a software project.
 
 ## References
 

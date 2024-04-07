@@ -1,10 +1,8 @@
 ---
-
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 # layout: home
-
 
 layout: default
 title: Introduction
@@ -20,7 +18,6 @@ This course covers the key concepts related to the reuse of open source software
 ## Target audience
 
 The content of this site is intended for software developers, architects, site reliability engineers and project managers who care about software quality and resilient supply chains of open source software.
-
 
 ## Open-source
 

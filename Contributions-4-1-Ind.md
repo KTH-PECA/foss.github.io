@@ -23,6 +23,8 @@ Participating in an open source project can provide a sense of giving back to th
 
 Most open source projects often address real-world problems, making the developer’s contributions directly impactful. Whether a developer adds a new feature, fixes a bug, or improves documentation, their contributions have the potential to make a difference. As developers witness their contributions being used by others, including their own company, they might gain a sense of achievement and satisfaction, knowing that their efforts benefit not only their team and company but also the wider community.
 
+![personal benefits](img/contributions-module4-personal-benefits.jpg){:height="auto" width="50%"}
+
 ### Important skill sets
 
 The open source world is vast with diverse range of projects that require various skills and expertise. People from all backgrounds participate, and open source communities usually welcome all suitable skills, which help build and improve their projects. Whether the involvement is minimal or substantial, the contribution will be valued and appreciated by the community. However, when companies consider appointing an employee to contribute to open source projects, certain skills and expertise can be more efficient than others. The specific set of skills required depends on what to achieve, the company’s strategic goal, and the available role.

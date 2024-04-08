@@ -43,7 +43,7 @@ After the correct identification of the software packages, different forms of an
 The following image illustrates the stage of the programming proccess at which this type of analysis may be used
 
 ![static analysis](./img/static-analysis.png) |
-*Image source: Chess, Brian, and Gary McGraw. "Static analysis for security." IEEE security & privacy 2.6 (2004): 76-79* |
+_Image source: Chess, Brian, and Gary McGraw. "Static analysis for security." IEEE security & privacy 2.6 (2004): 76-79_ |
 
 Static analysis does not aim to eliminate all the security problems; it aims to make the code 'good enough'. It achieves this by utilizing rules and patterns to detect unsafe operations (e.g., `gets(&buf)` ) without actually running the code in question. There are several ways to perform this analysis, from simple to more advanced and accurate ones:
 
@@ -57,7 +57,7 @@ Vulnerable or malicious code can be inserted in various stages of the supply cha
 Binary analysis can tackle such problems. Tools like [angr](https://angr.io/) can produce control flow graphs from the executable, making it easier to detect bugs and unintended behavior. Others tools, such as [Black Duck](https://www.synopsys.com/software-integrity/security-testing/software-composition-analysis/binary-analysis.html), can detect outdated libraries, previously-known vulnerabilities, unwanted leakage of tokens and personal information (e.g., hardcoded email addresses). A security analysis of a binary is illustrated below:
 
 ![risk analysis](./img/risk-analysis.png) |
-*Image source: <https://www.synopsys.com/software-integrity/engage/sca>* |
+_Image source: <https://www.synopsys.com/software-integrity/engage/sca>_ |
 
 Binary analysis can also tackle the problem of compromised compilers. For example, the resulting executable from a supply chain can be compared with an executable produced in a safe and "trusted" environment, to ensure **software integrity**. Differences between the two executables could be caused due to the insertion of malicious code, but also from other non-malicious sources (which is the subject of [Reproducible builds](SSC-reproducible-builds.md)).
 

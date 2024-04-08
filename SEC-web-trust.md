@@ -26,7 +26,7 @@ We also encourage you to explore the links throughout the text, the [Do-It-Yours
 In the previous section, we utilized the PKI to bind public keys to a physical entity. However, PKI is not the only option; attesting code and infrastructure can be done in another way. Following the same procedure as before: a user can distribute their public key and sign their code/work with a private key. The public key can then be used to verify that the code was submitted by the user, through their corresponding private key. The alternative to PKI, is the web of trust. The web of trust is a _decentralized_ model that allows each user to endorse the association between a public key and a person; this way indirect trust can be achieved. The following image illustrates this:
 
 ![web of trust](./img/Web_of_Trust.png) |
-*Image source: <https://en.wikipedia.org/wiki/Web_of_trust>* |
+_Image source: <https://en.wikipedia.org/wiki/Web_of_trust>_ |
 
 ## Basic differences to PKI
 

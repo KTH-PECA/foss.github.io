@@ -23,7 +23,7 @@ Participating in an open source project can provide a sense of giving back to th
 
 Most open source projects often address real-world problems, making the developer’s contributions directly impactful. Whether a developer adds a new feature, fixes a bug, or improves documentation, their contributions have the potential to make a difference. As developers witness their contributions being used by others, including their own company, they might gain a sense of achievement and satisfaction, knowing that their efforts benefit not only their team and company but also the wider community.
 
-![personal benefits](img/contributions-module4-personal-benefits.jpg){:height="auto" width="50%"}
+![personal benefits](img/contributions-module4-personal-benefits.jpg){:height="auto" width="60%" style="display:block; margin-left:auto; margin-right:auto"}
 
 ### Important skill sets
 

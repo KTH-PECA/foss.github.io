@@ -10,7 +10,7 @@ permalink: /Contributions-4-2-Ind
 
 Anyone representing a company as a professional in the open source software community are presented with unique opportunities, but also entrusted with significant responsibilities. That employee becomes part of the company’s branding, representing its values and commitment to collaboration, innovation, and excellence in every interaction with the open source community. It is essential to not just develop the technical expertise but have strong ethical mindset that is aligned with the specific demands and the subtle distinction of the role. Understanding and executing these responsibilities are of greatest importance when participating in open source software initiatives.
 
-![personal benefits](img/contributions-module4-personal-benefits-2.jpg){:height="auto" width="50%"}
+![personal benefits](img/contributions-module4-personal-benefits-2.jpg){:height="auto" width="60%" style="display:block; margin-left:auto; margin-right:auto"}
 
 **Key responsibilities and best practices:**
 

@@ -35,4 +35,3 @@ For instance, the reason may be that the company is relying on a specific open s
 When the question “why” is answered, the possibility to assess the contribution is significantly improved, both in terms of suitability and in terms of needed resources, engagement, timeframe, etc.
 
 Large companies with mature open source development management organizations and a high volume of cases can often benefit from using standardized forms for contribution requests as part of the assessment process. 
-

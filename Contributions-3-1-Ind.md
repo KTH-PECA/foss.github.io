@@ -32,7 +32,7 @@ If there is no obvious answer to that question, it is likely due to one out of t
 
 1. The company is immature in the open source software business strategic dimension, lacking sufficient capabilities, structures and/or strategies to answer the question.
 
-See Module 2.
+See Module 2 .
 
 2. The contribution does not fit with the company strategy and is thereby questionable.
 

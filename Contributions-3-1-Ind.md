@@ -1,21 +1,14 @@
 ---
-
 layout: default
-
 title: Open Source Contributions
-
 nav_order: 2
-
 has_children: true
-
 permalink: /Contributions-3-1-Ind
-
 ---
 
 ## Contributions to existing open source software projects
 
 The business process of engaging in existing open source software projects can be set up in various ways and be subject to different governance models, depending on a company’s needs and capabilities.
-
 Regardless of if the decision is made through an ad hoc process or if it passes through a sophisticated setup (e.g. with an Open Source Program Office (OSPO)), the process should in the end lead to the following three cornerstones:
 
 * Purpose. A defined purpose for the specific contribution activity.
@@ -27,12 +20,10 @@ Regardless of if the decision is made through an ad hoc process or if it passes 
 ## Defining the purpose of the open source software contribution
 
 As described in module 2, there are many possible reasons for a company to engage in open source software development through contributions. When considering a specific contribution case, the task is essentially to identify which of these reasons apply to the case in question. In short: why make this contribution?
-
 If there is no obvious answer to that question, it is likely due to one out of two reasons:
 
 1. The company is immature in the open source software business strategic dimension, lacking sufficient capabilities, structures and/or strategies to answer the question.
-
-See Module 2 .
+See Module 2.
 
 2. The contribution does not fit with the company strategy and is thereby questionable.
 

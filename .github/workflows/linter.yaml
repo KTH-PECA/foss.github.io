@@ -51,4 +51,4 @@ jobs:
           VALIDATE_MARKDOWN: true
           MARKDOWN_CONFIG_FILE: markdownlint.yml
           FILTER_REGEX_INCLUDE: .*.md
-
+          USE_FIND_ALGORITHM: true  

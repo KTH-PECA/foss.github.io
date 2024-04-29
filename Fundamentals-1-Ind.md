@@ -17,7 +17,7 @@ With the success of Linux, which was released by Linus Torvalds in February 1992
 ![GNU Logo](./img/heckert_gnu.transp.small.png)
 ![GNU Logo](./img/Tux_small.png)
 
-*GNU image by by Aurélio A. Heckert*, and *Tux image by [Larry Ewing](mailto:lewing@isc.tamu.edu) and The GIMP*
+*GNU image by by Aurélio A. Heckert*, and *Tux image by [Larry Ewing](mailto:lewing@isc.tamu.edu){:target="_blank"} and The GIMP*
 
 # Open source software in a legal context
 

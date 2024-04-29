@@ -24,7 +24,7 @@ Such strategy or policy might also be needed on product or product area level.
 
 ![Infrastructure](./img/Infrastructure.png)
 
-_Image by [Randall Munroe](https://xkcd.com/2347/)_
+_Image by [Randall Munroe](https://xkcd.com/2347/){:target="_blank"}_
 
 The strategy for consuming free open source software should consider the following aspects:
 
@@ -88,7 +88,7 @@ Documentation to declare included free open source software components as either
 
 Suggested formats are being developed both for general consumption and for industry niches like automotive, health and telecom. There is a standard for the data format (SPDX) for this in place. ISO/IEC 5962:2021
 
-[Link to NTIA requirements on SBOMs >>](https://www.ntia.doc.gov/report/2021/minimum-elements-software-bill-materials-sbom)
+[Link to NTIA requirements on SBOMs >>](https://www.ntia.doc.gov/report/2021/minimum-elements-software-bill-materials-sbom){:target="_blank"}
 
 ## Upgrade strategy as a security aspect for open source components
 
@@ -155,7 +155,7 @@ Export control can be further limited through country declaration of restricted 
 
 ## Free open source software as an export controlled item
 
-Free open source software is today not export controlled by EU, US, or [the Wassenaar Arrangement, WA >>](https://www.wassenaar.org/)  
+Free open source software is today not export controlled by EU, US, or [the Wassenaar Arrangement, WA >>](https://www.wassenaar.org/){:target="_blank"}
 
 Professional development including free open source software for products to be exported must be documented and export control classified if cryptographic functionality is included.
 

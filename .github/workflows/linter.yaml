@@ -33,7 +33,7 @@ jobs:
       # Checkout the repo      #
       ##########################
       - name: Checkout Code
-        uses: actions/checkout@v3
+        uses: actions/checkout@9bb56186c3b09b4f86b1c65136769dd318469633 # v4.1.2
         with:
           # Full git history is needed to get a proper
           # list of changed files within `super-linter`
@@ -50,5 +50,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_MARKDOWN: true
           MARKDOWN_CONFIG_FILE: markdownlint.yml
-          FILTER_REGEX_INCLUDE: .*.md
-          USE_FIND_ALGORITHM: true  
+          FILTER_REGEX_INCLUDE: *.md

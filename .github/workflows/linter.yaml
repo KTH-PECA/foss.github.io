@@ -50,5 +50,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_MARKDOWN: true
           MARKDOWN_CONFIG_FILE: markdownlint.yml
-          LOG_LEVEL: DEBUG
+          LOG_LEVEL: INFO
 
